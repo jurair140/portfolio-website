@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal porfolio website-jurair</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/094a872d8c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+
+    <div class="container">
+        <nav>
+            <img class="logo" src="image/logo.png" alt="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#services">service</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact">contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Full stack developer</p>
+            <h1>Hi, i am <span>jurair</span> from india</h1>
+        </div>
+     </div>
+    </div>
+           <!--------------------------about page----------------------------------------------------->
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/img6.jpeg" alt="image-of-jurair" width="100%">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Hi, I'm Jurair, a skilled full-stack developer specializing in the MERN stack. I'm dedicated to crafting top-notch, user-friendly websites that seamlessly blend innovation and functionality. Beyond coding, I'm an avid explorer, seeking adventures worldwide, and a passionate cook who enjoys experimenting with flavors.
+                         Welcome to my portfolio, where technology meets creativity and a zest for exploration.</p>
+
+
+                         <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">skills</p>  <!--two class name for css transion effect-->
+                            <p class="tab-links" onclick="opentab('experience')">experience</p>
+                            <p class="tab-links" onclick="opentab('education')">education</p>
+                         </div>
+
+               <!--------------------------------tab contents------------------------>
+                         <div class="tab-contents active-tab"  id="skills" >
+                            <ul>
+                                <li><span>UI/UX</span><br>designing web/app interface</li>
+                                <li><span>MERN stack</span><br> web application developer</li>
+                                <li><span>DYNAMIC WENSITE</span><br> websites developer</li>
+                            </ul>
+                         </div>
+                         <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2023 - current</span><br>working a freelancer as a full stack web developer</li>
+                                <li><span>2022 - 2023</span><br>IEDC executive member in ss college</li>
+                                <li><span>2021 - 2022</span><br>intructor as SALT program(by IEDC and kerala government)  </li>
+                            </ul>
+                         </div>
+                         <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>on going</span><br>UG in calicut university on BSC computer sceince</li>
+                                <li><span>2023</span><br>MERN STACK course in udemy</li>
+                                <li><span>2021</span><br>Higher secondary in computer sceince</li>
+                            </ul>
+                         </div>
+                </div>
+
+            </div>
+            
+        </div>
+     </div>
+      <!-------------------------services-------------------------->
+      <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="servicec-list">
+                <div>
+                    
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>Web design</h2>
+                    <p>Offering bespoke web design solutions tailored to your brand's essence and vision.
+                         Crafting visually stunning websites with seamless functionality
+                          to elevate your online presence</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web developer</h2>
+                    <p>Specializing in website development, I create robust digital platforms that marry cutting-edge 
+                        technology with user-friendly design.
+                         From concept to launch, I build dynamic websites that exceed expectations and drive online success.</p>
+                    <a href="#">learn more</a>
+             </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Web application</h2>
+                    <p>Specializing in website development, I create robust digital platforms that marry cutting-edge 
+                        technology with user-friendly design.
+                         From concept to launch,  I build dynamic websites that exceed expectations and drive online success.</p>
+                    <a href="#">learn more</a>     
+                </div>
+
+            </div>
+
+        </div>
+      </div>
+
+      <!------------------portfoilio------------------------------------------>
+
+      <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My works</h1>
+            <div class="work-list">
+                <div class="work">
+                <img src="image/work-1.png" alt="iphone-showing-socialmedia-apps">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>the app connects you yo the talend people around the world.
+                        Download if from paly store.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+             </div>
+             <div class="work">
+                <img src="image/work-2.png" alt="scrolling-a-music-app">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>Discover rhythm in every beat. Your gateway to a harmonious world of music - anytime, anywhere.
+                        Download it from play store.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+             </div>
+             <div class="work">
+                <img src="image/work-3.png" alt="iphone-showing-ecomerse-website">
+                <div class="layer">
+                    <h3>Online Shoping website</h3>
+                    <p>Shopping redefined, just a click away. Explore, indulge,
+                         and shop your desires effortlessly with our online marketplace.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+             </div>
+        </div>
+        <a href="" class="btn">see more</a>
+        </div>
+      </div>
+      <!----------------contact form------------------------------------->
+
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>jurair140@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>9656266809</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/juru.jurair.7"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/jurair_?t=AcwjKay4HJ8VRtAO8JnZtA&s=09"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="https://instagram.com/jurair_c?igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/jurair-juru-796b1822a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="#" download class="btn btn2" class="btn btn2" >Download CV</a>  <!--download cv by its class-->
+                </div>
+                <div class="contact-right">
+                    <form action="" name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="john wankada" required>
+                        <input type="text" name="Email" placeholder="youremail@gmail.com" required>
+                        <textarea name="Message"  rows="6" placeholder="write your message here "></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright ©️ jurair. made by <i class="fa-solid fa-heart"></i> jurair</p>
+        </div>
+      </div>
+
+     <!-------------javascript------------>
+     <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for( tablink of  tablinks){
+                tablink.classList.remove("active-link");
+           
+            }
+            for( tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+
+        }
+
+     </script>
+  <!---javascript for sidemenu open and close-->
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+  </script>   
+  <!-----script for contact form google sheet-->
+  
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbypO2yxV3HtxEFXKFtvOQNBrMY80175jsgRxFlItcSF22ohTJbZ_9twdChHmaWYc8v6/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    /*sript for showing message sent successfully 
+    and disappear after 5s*/
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+
+
+
+    
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
